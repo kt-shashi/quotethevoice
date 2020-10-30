@@ -5,7 +5,7 @@
 
     <item
         android:id="@+id/nav_home"
-        android:icon="@drawable/ic_menu_camera"
+        android:icon="@drawable/icon_home"
         android:title="@string/menu_home" />
 
     <group
@@ -14,11 +14,11 @@
 
         <item
             android:id="@+id/nav_videos"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/icon_videos"
             android:title="@string/menu_videos" />
         <item
             android:id="@+id/nav_social_media"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/icon_social_media"
             android:title="@string/menu_social_meia" />
 
     </group>
@@ -31,10 +31,12 @@
 
             <item
                 android:id="@+id/nav_about"
+                android:icon="@drawable/icon_about"
                 android:title="@string/about" />
 
             <item
                 android:id="@+id/nav_terms_condition"
+                android:icon="@drawable/icon_terms"
                 android:title="@string/terms_condition" />
 
         </menu>

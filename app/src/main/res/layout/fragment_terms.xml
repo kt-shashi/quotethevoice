@@ -28,6 +28,7 @@
                 android:layout_marginEnd="12dp"
                 android:fontFamily="@font/montserrat"
                 android:text="@string/terms2"
+                android:textColor="@color/blue_custom"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -52,6 +53,7 @@
                 android:fontFamily="@font/montserrat"
                 android:text="@string/privacy_policy"
                 android:textAlignment="center"
+                android:textColor="@color/blue_custom"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -72,18 +74,22 @@
 
     <Button
         android:id="@+id/button_contact_developer"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
         android:layout_marginEnd="12dp"
         android:layout_marginBottom="12dp"
-        android:backgroundTint="@color/black"
+        android:background="@drawable/design_button_blue"
+        android:backgroundTint="@color/blue_custom"
         android:drawableLeft="@drawable/icon_email_small"
+        android:drawablePadding="10dp"
         android:elevation="5dp"
         android:fontFamily="@font/montserrat"
         android:gravity="start"
         android:padding="10dp"
         android:text="@string/contact_developer"
+        android:textColor="@color/black"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

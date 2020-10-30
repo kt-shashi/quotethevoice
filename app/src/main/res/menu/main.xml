@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/menu_social"
-        android:icon="@drawable/ic_menu_slideshow"
-        android:iconTint="@color/white"
+        android:icon="@drawable/icon_follow"
         android:title="@string/menu_social_meia"
         app:showAsAction="ifRoom" />
 </menu>

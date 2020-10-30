@@ -13,22 +13,19 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-import com.google.android.material.navigation.NavigationView;
-import com.google.firebase.messaging.FirebaseMessaging;
-
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
-import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
+
+import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.messaging.FirebaseMessaging;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -40,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        toolbar.setTitleTextColor(getResources().getColor(android.R.color.black));
+
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
@@ -90,28 +89,19 @@ public class MainActivity extends AppCompatActivity {
         Button buttonTwitter = layoutView.findViewById(R.id.button_Twitter);
         Button buttonFacebook = layoutView.findViewById(R.id.button_facebook);
 
-        buttonInstagram.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openInsta();
-                testDialog.dismiss();  // to dismiss
-            }
+        buttonInstagram.setOnClickListener(view -> {
+            openInsta();
+            testDialog.dismiss();  // to dismiss
         });
 
-        buttonTwitter.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openTwitter();
-                testDialog.dismiss();  // to dismiss
-            }
+        buttonTwitter.setOnClickListener(view -> {
+            openTwitter();
+            testDialog.dismiss();  // to dismiss
         });
 
-        buttonFacebook.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openFacebook();
-                testDialog.dismiss();  // to dismiss
-            }
+        buttonFacebook.setOnClickListener(view -> {
+            openFacebook();
+            testDialog.dismiss();  // to dismiss
         });
     }
 

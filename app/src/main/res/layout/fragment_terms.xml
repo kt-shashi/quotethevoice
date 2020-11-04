@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/dark_white"
     tools:context=".ui.others.TermsFragment">
 
     <ScrollView
@@ -82,11 +83,11 @@
         android:background="@drawable/design_button_blue"
         android:backgroundTint="@color/blue_custom"
         android:drawableLeft="@drawable/icon_email_small"
-        android:drawablePadding="10dp"
+        android:drawablePadding="5dp"
         android:elevation="5dp"
         android:fontFamily="@font/montserrat"
-        android:gravity="start"
-        android:padding="10dp"
+        android:gravity="start|center_vertical"
+        android:minHeight="0dp"
         android:text="@string/contact_developer"
         android:textColor="@color/black"
         android:textStyle="bold"

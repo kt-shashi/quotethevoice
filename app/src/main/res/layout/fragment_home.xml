@@ -39,6 +39,15 @@
             app:layout_constraintStart_toStartOf="@id/image_slider_home_fragment"
             app:layout_constraintTop_toBottomOf="@id/image_slider_home_fragment" />
 
+        <ProgressBar
+            android:id="@+id/progress_bar_home_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/image_slider_home_fragment"
+            app:layout_constraintEnd_toEndOf="@id/image_slider_home_fragment"
+            app:layout_constraintStart_toStartOf="@id/image_slider_home_fragment"
+            app:layout_constraintTop_toTopOf="@id/image_slider_home_fragment" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>

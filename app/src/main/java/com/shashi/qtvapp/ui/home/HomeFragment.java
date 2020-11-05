@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -36,6 +37,7 @@ public class HomeFragment extends Fragment {
     private CollectionReference collectionReference;
 
     private ImageSlider imageSlider;
+    private ProgressBar progressBar;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -50,12 +52,15 @@ public class HomeFragment extends Fragment {
 
     private void initViews(View view) {
         imageSlider = view.findViewById(R.id.image_slider_home_fragment);
+        progressBar = view.findViewById(R.id.progress_bar_home_fragment);
+        progressBar.setVisibility(View.GONE);
 
         firebaseFirestore = FirebaseFirestore.getInstance();
         collectionReference = firebaseFirestore.collection("imageslider");
     }
 
     private void initData() {
+        progressBar.setVisibility(View.VISIBLE);
 
         final List<SlideModel> homeImageList = new ArrayList<>();
 
@@ -71,9 +76,12 @@ public class HomeFragment extends Fragment {
 
                     imageSlider.setImageList(homeImageList, ScaleTypes.CENTER_CROP);
 
+                    progressBar.setVisibility(View.GONE);
                 })
                 .addOnFailureListener(e -> {
-                    Toast.makeText(getActivity(), "Could not load Images at this moment", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), "Failed to load images", Toast.LENGTH_SHORT).show();
+                    progressBar.setVisibility(View.GONE);
                 });
+
     }
 }

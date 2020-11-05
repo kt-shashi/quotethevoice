@@ -8,7 +8,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -34,11 +33,16 @@ public class TermsFragment extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View view) {
+        Uri uri = Uri.parse("https://www.instagram.com/_abstract_noun/");
+        Intent likeIng = new Intent(Intent.ACTION_VIEW, uri);
+
+        likeIng.setPackage("com.instagram.android");
+
         try {
-            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("mailto:" + "coding.shashi@gmail.com"));
-            startActivity(intent);
+            startActivity(likeIng);
         } catch (ActivityNotFoundException e) {
-            Toast.makeText(getActivity(), "Could not mail the developer", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(Intent.ACTION_VIEW,
+                    Uri.parse("https://www.instagram.com/_abstract_noun/")));
         }
     }
 }

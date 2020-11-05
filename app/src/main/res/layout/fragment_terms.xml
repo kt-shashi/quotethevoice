@@ -82,7 +82,7 @@
         android:layout_marginBottom="12dp"
         android:background="@drawable/design_button_blue"
         android:backgroundTint="@color/blue_custom"
-        android:drawableLeft="@drawable/icon_email_small"
+        android:drawableLeft="@drawable/icon_instagram_small"
         android:drawablePadding="5dp"
         android:elevation="5dp"
         android:fontFamily="@font/montserrat"

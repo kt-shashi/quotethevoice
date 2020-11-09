@@ -20,11 +20,13 @@
     <string name="privacy_policy">Privacy Policy</string>
     <string name="quote_the_voice">Quote The Voice</string>
     <string name="terms2">Terms</string>
-    <string name="contact_developer">Contact Developer</string>
+    <string name="contact_developer">Developer | SHASHI</string>
     <string name="follow">Follow</string>
     <string name="instagram">Instagram</string>
     <string name="twitter">Twitter</string>
     <string name="facebook">Facebook</string>
     <string name="by_sriansh_sankhi">By Sriansh Sankhi</string>
     <string name="home_text">My name is Sriansh and I am currently doing my undergraduate in Calcutta University. Writing has always been my passion and once I found out I was good at it, I made a facebook page called \'Quote the voice\' in 2016. I started writing as a novice, mostly one liners or small poems/shayaris. But as years went by, me and my poetry evolved. I went from only reciting to videography in my art. My aim is to uplift this underestimated art and to create a warm space in people for the same.</string>
+    <string name="about_text">Quote the voice, initially started as a facebook page in 2017 with poetry/shayaris, is now getting recognised by the help of your love and support. So I thought to make the engagement a bit more strong with you by making this app for you all.\nThis App will contain all my videos and social media accounts where you can show your love and support. You will also get notified every time I\'m gonna upload a video. We will give all our efforts to make simple poetry more innovative by giving it good cinematic shots and adding relatable songs and tunes into it.\nThe main aim of making this app for you is just a small step of mine to make poetry more beautiful. You already gave lots of love to me on Instagram, Facebook and YouTube now it\'s again your time to show loyalty towards poetry.\n\nWe at Quote the voice are open to collaborations too. Kindly mail us for more info.</string>
+    <string name="mail_us">Mail us</string>
 </resources>

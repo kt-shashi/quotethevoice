@@ -13,7 +13,6 @@
 .externalNativeBuild
 .cxx
 local.properties
-*.apk
 *.ap_
 *.dex
 *.class
@@ -52,3 +51,4 @@ gradle-app.setting
 /build/
 .gradle
 google-services.json
+app/

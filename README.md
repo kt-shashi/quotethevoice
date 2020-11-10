@@ -1,6 +1,6 @@
 <div align="center">
         
-# Freelancing Project | QuoteTheVoice
+# Freelance Project | QuoteTheVoice
 
 </div>
 
